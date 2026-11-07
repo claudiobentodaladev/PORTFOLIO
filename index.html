@@ -1,321 +1,488 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cláudio Bento Dala - Creative Developer</title>
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <div class="logo-text">Cláudio Bento Dala</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cláudio Bento Dala | Software Developer</title>
+
+    <meta
+      name="description"
+      content="Cláudio Bento Dala is a Software Developer from Luanda, Angola, specializing in web, desktop, and CLI application development. Creator of ENIDE, a multilingual programming language and educational ecosystem."
+    />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <header id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">Cláudio Bento Dala</a>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          Menu
+        </button>
+
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#timeline">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <h1>Cláudio Bento Dala</h1>
+
+          <p class="subtitle">
+            Software Developer | Web, Desktop & CLI Applications
+          </p>
+
+          <p class="hero-text">
+            Software Developer with experience in building web applications,
+            desktop software, and command-line tools. Working with technologies
+            such as JavaScript, TypeScript, Node.js, React, and Electron.
+            Creator of ENIDE, a multilingual programming language and
+            educational ecosystem designed to make programming accessible beyond
+            English.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary">
+              Explore My Projects
             </a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#timeline">Journey</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div class="mobile-nav" id="mobileNav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#timeline">Journey</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-bg-animation">
-            <div class="floating-shape shape-1"></div>
-            <div class="floating-shape shape-2"></div>
-            <div class="floating-shape shape-3"></div>
-            <div class="geo-shape geo-1"></div>
-            <div class="geo-shape geo-2"></div>
-            <div class="particles">
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-                <span class="particle"></span>
-            </div>
+            <a href="#contact" class="btn btn-secondary"> Get in Touch </a>
+          </div>
         </div>
-        <div class="hero-content">
-            <h1>Cláudio Bento Dala</h1>
-            <p class="subtitle">Software Developer</p>
-            <p class="normal-text">Crafting digital experiences with passion and precision</p>
-            <div class="cta-buttons">
-                <a href="#portfolio" class="cta-primary">View My Work</a>
-                <a href="#contact" class="cta-secondary">Let's Talk</a>
-            </div>
-            
-            <div class="stats-section">
-                <div class="stat-card">
-                    <span class="stat-number" id="number-year-carrer">n+</span>
-                    <span class="stat-label">Years</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">4+</span>
-                    <span class="stat-label">Projects</span>
-                </div>
-            </div>
-        </div>
-    </section>
+      </section>
 
-    <section id="about" class="fade-in">
+      <!-- About Section -->
+      <section id="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Passionate about creating digital experiences that make a difference</p>
-            </div>
+          <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+          </div>
 
-            <div class="about-content">
-                <div class="about-intro">
-                    <div class="about-image"></div>
-                    <div class="about-text">
-                        <h3>My Journey</h3>
-                        <p>I'm a passionate creative developer with over years of experience in crafting beautiful, functional websites and applications. My expertise spans across modern web technologies, user experience design, and creative problem-solving.</p>
-                        <p>I believe in the power of clean code, intuitive design, and seamless user experiences. When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or capturing moments through photography.</p>
-                    </div>
+          <div class="about-content">
+            <img
+              class="about-image"
+              src="images/about-profile.png"
+              alt="Portrait of Cláudio Bento Dala"
+              width="160"
+              height="160"
+            />
+
+            <div class="about-text">
+              <p>
+                I am a Computer Science student and an independent Software
+                Developer based in Luanda, Angola. My work spans multiple areas
+                of software development, including web applications, desktop
+                applications, command-line tools, and developer tooling.
+              </p>
+
+              <p>
+                I am the creator of ENIDE, a multilingual programming language
+                and educational ecosystem that enables people to write code
+                using their own languages. I independently developed its lexer,
+                parser, and interpreter, alongside its documentation, learning
+                exercises, and supporting tools, including ENIDE CODE.
+              </p>
+
+              <p>
+                Beyond ENIDE, I have published software packages on npm,
+                maintain public repositories on GitHub, and hold certifications
+                in JavaScript and MongoDB. I continuously expand my technical
+                knowledge through independent study and practical software
+                development.
+              </p>
+
+              <p>
+                I am currently seeking my first professional opportunity in
+                software development, preferably on a part-time basis, where I
+                can contribute to real-world projects and continue growing as a
+                developer.
+              </p>
+
+              <dl class="facts">
+                <div>
+                  <dt>Location</dt>
+                  <dd>Luanda, Angola</dd>
                 </div>
-                
-                <div class="about-cards">
-                    <div class="about-card">
-                        <h4>Mission</h4>
-                        <p>To create digital experiences that inspire, engage, and solve real-world problems through innovative design and development.</p>
-                    </div>
-                    
-                    <div class="about-card">
-                        <h4>Vision</h4>
-                        <p>A world where technology seamlessly integrates with human needs, creating more meaningful digital interactions.</p>
-                    </div>
+
+                <div>
+                  <dt>Availability</dt>
+                  <dd>Part-time</dd>
                 </div>
+
+                <div>
+                  <dt>Languages</dt>
+                  <dd>Portuguese (Native), English (C1)</dd>
+                </div>
+              </dl>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="skills" class="fade-in">
+      <!-- Skills Section -->
+      <section id="skills">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <p class="section-subtitle">Combining technical excellence with creative vision</p>
+          <div class="section-header">
+            <h2 class="section-title">Technical Skills</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Programming Languages</h3>
+              <p>JavaScript, TypeScript, PHP, C</p>
             </div>
 
-            <div class="skills-container">
-                <div class="skills-wrapper">
-                    
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <h4>Frontend Excellence</h4>
-                            <p>responsive design and pixel-perfect implementations</p>
-                            <div class="skill-progress">
-                                <div class="skill-progress-bar" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <h4>Mobile Development</h4>
-                            <p>User-centered design thinking with a focus on accessibility and visual appeal</p>
-                            <div class="skill-progress">
-                                <div class="skill-progress-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <h4>Backend and API</h4>
-                            <p>Lightning-fast load times and seamless user experiences across all devices</p>
-                            <div class="skill-progress">
-                                <div class="skill-progress-bar" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <h4>Full-Stack Development</h4>
-                            <p>End-to-end application development from database to deployment</p>
-                            <div class="skill-progress">
-                                <div class="skill-progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="skill-group">
+              <h3>Front-end Development</h3>
+              <p>React, Next.js, HTML, CSS, JavaScript</p>
             </div>
+
+            <div class="skill-group">
+              <h3>Back-end Development</h3>
+              <p>Node.js, Express.js, REST APIs</p>
+            </div>
+
+            <div class="skill-group">
+              <h3>Desktop & CLI Development</h3>
+              <p>Electron, Node.js, Command-line Applications</p>
+            </div>
+
+            <div class="skill-group">
+              <h3>Databases</h3>
+              <p>PostgreSQL, MySQL, MongoDB</p>
+            </div>
+
+            <div class="skill-group">
+              <h3>Development Tools</h3>
+              <p>Git, GitHub, npm, Docker, Linux, Postman</p>
+            </div>
+
+            <div class="skill-group">
+              <h3>Deployment & Hosting</h3>
+              <p>Vercel, Render, VPS</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="timeline" class="fade-in">
+      <!-- Projects Section -->
+      <section id="projects">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Journey</h2>
-                <p class="section-subtitle">From curious beginner to seasoned developer - here's how I got here</p>
-            </div>
+          <div class="section-header">
+            <h2 class="section-title">Projects</h2>
 
-            <div class="timeline-controls">
-                <button class="timeline-filter active" data-filter="all">All</button>
-                <button class="timeline-filter" data-filter="education">Education</button>
-                <button class="timeline-filter" data-filter="work">Work</button>
-                <button class="timeline-filter" data-filter="project">Projects</button>
-            </div>
-
-            <div class="timeline-container">
-                <div class="timeline-line"></div>
-                <div class="timeline-progress"></div>
-
-                <div class="timeline-item" data-category="project">
-                    <div class="timeline-node"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-year">2023 - Present</div>
-                        <h3 class="timeline-title">Independent Studies</h3>
-                        <div class="timeline-company">Online</div>
-                        <p class="timeline-description">
-                           Continuous self-directed learning through online platforms and technical documentation. Focused on modern web
-                           development, backend architecture, and problem-solving strategies. These studies include experimenting with new
-                           tools,reading technical papers, and building small experimental projects to test concepts in real scenarios.
-                        </p>
-                        <div class="timeline-skills">
-                            <span class="timeline-skill">HTML, CSS & JavaScript</span>
-                            <span class="timeline-skill">Node.js</span>
-                            <span class="timeline-skill">Git</span>
-                            <span class="timeline-skill">React</span>
-                            <span class="timeline-skill">Docker</span>
-                            <span class="timeline-skill">MYSQL</span>
-                            <span class="timeline-skill">MongoDB</span>
-                            <span class="timeline-skill">Express.js</span>
-                            <span class="timeline-skill">React Native</span>
-                        </div>
-                        <div class="timeline-achievements">
-                            <div class="timeline-achievement">Started program from zero</div>
-                            <div class="timeline-achievement">Flexibility to learn new things from internet</div>
-                            <div class="timeline-achievement">Autonomy to learn alone</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item" data-category="education">
-                    <div class="timeline-node"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-year">2024 - Present</div>
-                        <h3 class="timeline-title">Computer Science High School</h3>
-                        <div class="timeline-company">Instituto Politecnico Privado Carmun</div>
-                        <p class="timeline-description">
-                            Focus on Human-Computer Interaction and Software. 
-                            Developed strong foundations in algorithms, data structures, and user-centered design principles.
-                        </p>
-                        <div class="timeline-skills">
-                            <span class="timeline-skill">C</span>
-                            <span class="timeline-skill">C#</span>
-                        </div>
-                        <div class="timeline-achievements">
-                            <div class="timeline-achievement">Run a School programming olympiad</div>
-                            <div class="timeline-achievement">Led High School hackathon team</div>
-                            <div class="timeline-achievement">Published research on accessibility in web design</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="fade-in">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Let's Create Together</h2>
-                <p class="section-subtitle">Ready to bring your ideas to life? Let's start a conversation</p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p>I'm always excited to work on new projects and collaborate with amazing people. Whether you have a specific project in mind or just want to explore possibilities, I'd love to hear from you.</p>
-                    
-                    <div class="contact-details">
-                        <h4>Available for:</h4>
-                        <ul>
-                            <li>Freelance Projects</li>
-                            <li>Full-time Opportunities</li>
-                            <li>Consulting & Code Reviews</li>
-                            <li>Speaking & Workshops</li>
-                        </ul>
-                    </div>
-
-                    <div class="contact-details">
-                        <h4>Based in:</h4>
-                        <p>Angola, Luanda (Open to Remote)</p>
-                    </div>
-                </div>
-
-                <div class="contact-form-container">
-                    <form action="https://formsubmit.co/programmer.claudio@gmail.com" method="post" class="contact-form">
-                        <div class="form-group">
-                            <input type="text" name="Name" class="form-input" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="Email" class="form-input" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" name="PhoneNumber" class="form-input" placeholder="Your Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="ProjectType" class="form-input" placeholder="Project Type" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-textarea" name="Description" rows="5" placeholder="Tell me about your project..." required></textarea>
-                        </div>
-                        <input type="hidden" name="_next" value="https://claudiobentodaladev.github.io/PORTFOLIO/">
-                        <input type="hidden" name="_captcha" value="false">
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-bottom">
-            <p class="footer-copyright">
-                © 2026 claudiobentodaladev. All rights reserved.
+            <p class="section-subtitle">
+              Selected projects and contributions to the ENIDE ecosystem.
             </p>
-            <div class="footer-credits">
-                <div class="footer-divider"></div>
-                <a href="https://github.com/claudiobentodaladev" target="_blank" rel="noopener noreferrer" class="footer-credit-link">
-                    <span class="footer-credit-icon">
-                        <img src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" alt="github logo" width="20">
-                    </span>
-                    <span>Github</span>
+          </div>
+
+          <div class="project-list">
+            <article class="project">
+              <h3>
+                <a
+                  href="https://enide.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ENIDE
                 </a>
-                <a href="https://www.linkedin.com/in/claudiodala" target="_blank" rel="noopener noreferrer" class="footer-credit-link">
-                    <span class="footer-credit-icon">
-                        <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=228BE6" alt="github logo" width="20">
-                    </span>
-                    <span>Linkedin</span>
+              </h3>
+
+              <p class="project-meta">
+                TypeScript ·Javascript · Nodejs · Bash · Programming Language · Interpreter
+              </p>
+
+              <p>
+                A multilingual programming language designed to let developers
+                write programs using different natural languages. Its
+                implementation includes a lexer, parser, and interpreter,
+                supported by multilingual documentation and learning resources.
+                The language grammar is open source under the CC BY 4.0 license.
+              </p>
+            </article>
+
+            <article class="project">
+              <h3>
+                <a
+                  href="https://enidecode.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ENIDE
                 </a>
-                <a href="https://www.instagram.com/claudio_dala_/" target="_blank" rel="noopener noreferrer" class="footer-credit-link">
-                    <span class="footer-credit-icon">
-                        <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="github logo" width="20">
-                    </span>
-                    <span>Instagram</span>
-                </a>
-            </div>
+              </h3>
+
+              <p class="project-meta">Browser-based Coding Environment</p>
+
+              <p>
+                A browser-based coding environment within the ENIDE ecosystem
+                that allows users to write, execute, and share programs without
+                installing additional software.
+              </p>
+            </article>
+
+          <p class="more-link">
+            Explore more of my work on
+            <a
+              href="https://github.com/claudiobentodaladev?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub </a
+            >.
+          </p>
         </div>
+      </section>
+
+      <!-- Experience and Education Section -->
+      <section id="timeline">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Education & Development</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <p class="timeline-year">2024 – Present</p>
+
+              <h3>Technical Secondary Education – Computer Science</h3>
+
+              <p class="timeline-place">
+                Instituto Politécnico Privado Carmun · Expected graduation:
+                2027/2028
+              </p>
+
+              <p>
+                Academic studies focused on Human-Computer Interaction, software
+                development, and computer science fundamentals.
+              </p>
+
+              <p class="timeline-tags">C, C#</p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-year">2023 – Present</p>
+
+              <h3>Independent Software Development & Self-Directed Learning</h3>
+
+              <p class="timeline-place">Independent Study · Online</p>
+
+              <p>
+                Continuous development of technical skills through official
+                documentation, online learning resources, and hands-on projects.
+                Applying acquired knowledge to the design and development of
+                independent software projects, including the ENIDE ecosystem.
+              </p>
+
+              <p class="timeline-tags">
+                HTML, CSS, JavaScript, TypeScript, Node.js, Express.js, React,
+                React Native, Git, Docker, MySQL, MongoDB
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <p class="timeline-year">Certifications</p>
+
+              <ul class="certs">
+                <li>JavaScript Certification</li>
+
+                <li>
+                  MongoDB: From Relational Model (SQL) to MongoDB's Document
+                  Model
+                </li>
+
+                <li>Securing MongoDB Atlas: Authentication & Authorization</li>
+
+                <li>
+                  MongoDB Schema Design Patterns and Anti-patterns (Skill Badge)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Get in Touch</h2>
+
+            <p class="section-subtitle">
+              Have an opportunity, a project, or an idea? I'd be glad to hear
+              from you.
+            </p>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Open to Opportunities</h3>
+
+              <ul>
+                <li>Entry-level Software Developer positions</li>
+                <li>Part-time opportunities</li>
+                <li>Freelance projects</li>
+                <li>Remote collaboration</li>
+              </ul>
+
+              <h3>Location</h3>
+
+              <p>Luanda, Angola · Open to remote opportunities</p>
+
+              <h3>Email</h3>
+
+              <p>
+                <a href="mailto:programmer.claudio@gmail.com">
+                  programmer.claudio@gmail.com
+                </a>
+              </p>
+            </div>
+
+            <div class="contact-form-container">
+              <form
+                action="https://formsubmit.co/programmer.claudio@gmail.com"
+                method="post"
+                class="contact-form"
+              >
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="Name"
+                    class="form-input"
+                    placeholder="Your Name"
+                    aria-label="Your Name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="Email"
+                    class="form-input"
+                    placeholder="Your Email Address"
+                    aria-label="Your Email Address"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    name="PhoneNumber"
+                    class="form-input"
+                    placeholder="Your Phone Number (Optional)"
+                    aria-label="Your Phone Number"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <textarea
+                    class="form-textarea"
+                    name="Description"
+                    rows="5"
+                    placeholder="Write your message..."
+                    aria-label="Your Message"
+                    required
+                  ></textarea>
+                </div>
+
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://claudiobentodaladev.github.io/PORTFOLIO/"
+                />
+
+                <input type="hidden" name="_captcha" value="false" />
+
+                <button type="submit" class="submit-btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-inner">
+        <p>© 2026 Cláudio Bento Dala. All rights reserved.</p>
+
+        <ul class="footer-links">
+          <li>
+            <a
+              href="https://github.com/claudiobentodaladev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/in/claudiodala"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.npmjs.com/~claudiobentodala"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              npm
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.youtube.com/@claudiobentodaladev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              YouTube
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/claudio_dala_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     <script src="./scripts/script.js"></script>
-</body>
+  </body>
 </html>
