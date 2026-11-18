@@ -601,7 +601,7 @@ footer {
 @media (min-width: 1600px) {
   html {
     font-size: 112.5%;
-  }
+  } 
   .container,
   .nav-container {
     max-width: 1240px;
