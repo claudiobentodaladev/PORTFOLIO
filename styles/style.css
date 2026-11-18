@@ -250,7 +250,7 @@ h3 {
 /* Competências */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr));
   gap: 1rem;
 }
 .skill-group {
@@ -265,6 +265,66 @@ h3 {
 .skill-group p {
   color: var(--text-muted);
   font-size: 0.98rem;
+}
+
+/* Ícones das tecnologias */
+.skill-group h3 {
+  margin-bottom: 0.9rem;
+}
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5.5rem, 1fr));
+  gap: 0.6rem;
+}
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 5.25rem;
+  padding: 0.8rem 0.4rem;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+.tech-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+.tech-card img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.tech-card img.icon-dark {
+  filter: invert(1) brightness(0.9);
+}
+.tech-card img.icon-dim {
+  filter: brightness(1.7) saturate(1.2);
+}
+.tech-card span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  line-height: 1.3;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tech-card {
+    transition: none;
+  }
+  .tech-card:hover {
+    transform: none;
+  }
+}
+@media (max-width: 600px) {
+  .tech-grid {
+    grid-template-columns: repeat(auto-fill, minmax(5.25rem, 1fr));
+  }
 }
 
 /* Projetos */
